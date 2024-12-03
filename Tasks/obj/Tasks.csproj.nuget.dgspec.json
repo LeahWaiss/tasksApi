@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "M:\\WebApi\\Lesson3\\Tasks\\Tasks\\Tasks.csproj": {}
+    "J:\\handesaim38-2\\rrrt\\Lesson3\\Tasks\\Tasks\\Tasks.csproj": {}
   },
   "projects": {
-    "M:\\WebApi\\Lesson3\\Tasks\\Tasks\\Tasks.csproj": {
+    "J:\\handesaim38-2\\rrrt\\Lesson3\\Tasks\\Tasks\\Tasks.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "M:\\WebApi\\Lesson3\\Tasks\\Tasks\\Tasks.csproj",
+        "projectUniqueName": "J:\\handesaim38-2\\rrrt\\Lesson3\\Tasks\\Tasks\\Tasks.csproj",
         "projectName": "Tasks",
-        "projectPath": "M:\\WebApi\\Lesson3\\Tasks\\Tasks\\Tasks.csproj",
+        "projectPath": "J:\\handesaim38-2\\rrrt\\Lesson3\\Tasks\\Tasks\\Tasks.csproj",
         "packagesPath": "C:\\Users\\328120985\\.nuget\\packages\\",
-        "outputPath": "M:\\WebApi\\Lesson3\\Tasks\\Tasks\\obj\\",
+        "outputPath": "J:\\handesaim38-2\\rrrt\\Lesson3\\Tasks\\Tasks\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

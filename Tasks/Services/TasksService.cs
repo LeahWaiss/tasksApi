@@ -60,9 +60,9 @@ namespace Tasks.Services
 
         }
 
-        public bool CreateTask(TasksModel task)
+        public void CreateTask(TasksModel task)
         {
-            return _tasksRepository.CreateTask(task);
+            _tasksRepository.CreateTask(task);
         }
 
         public void DeleteTask(TasksModel task)

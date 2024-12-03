@@ -52,15 +52,13 @@ namespace Tasks.Controllers
         {
             _tasksService = tasksService;
         }
-
-        [Route("GetAllTasksWithUser")]
-        [HttpGet("{id}")]
-        public IActionResult GetAllTasksWithUser(int userId)
+        [HttpGet("ProjectId/{id}")]
+        public IActionResult GetAllTasksWithProject(int ProjectId)
         {
-           var tasks = _tasksService.GetAllTasksWithUser(userId);
+            var tasks = _tasksService.GetAllTasksWithProject(ProjectId);
             return Ok(tasks);
         }
-        [Route("GetAllTasks")]
+
         [HttpGet("{id}")]
          
         public List<TasksModel> GetAllTasks(int id)
@@ -68,28 +66,20 @@ namespace Tasks.Controllers
             return _tasksService.GetAllTasks(id);
         }
 
-
-        [Route("api/Tasks/GetAllTasksByUser_1/{userId}")]
-        [HttpGet]
+        [HttpGet("userId/{id}")]
         public IActionResult GetAllTasksByUser_1(int userId)
         {
             var tasks = _tasksService.GetAllTasksWithUser(userId);
             return Ok(tasks);
         }
-        [Route("api/Tasks/GetAllTasksWithProject/{ProjectId}")]
-        [HttpGet]
-        public IActionResult GetAllTasksWithProject(int ProjectId)
-        {
-            var tasks = _tasksService.GetAllTasksWithProject(ProjectId);
-            return Ok(tasks);
-        }
+       
         [HttpDelete]
         public IActionResult Delete(TasksModel task)
         {
             _tasksService.DeleteTask(task);
             return Ok("success");
         }
-
+        
         [HttpPut]
         public IActionResult Update(TasksModel task)
         {
@@ -98,12 +88,9 @@ namespace Tasks.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(TasksModel task)
-        {
-            bool success = _tasksService.CreateTask(task);
-            if (success)
-                return Ok("success");
-            else return BadRequest("user not exists");
+        public void Create(TasksModel task)
+        {            
+            _tasksService.CreateTask(task);
         }
     }
 }

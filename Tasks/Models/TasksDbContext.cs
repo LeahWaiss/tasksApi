@@ -61,10 +61,10 @@ namespace Tasks.Models
                 //entity.Property(e => e.Email)
                 //    .HasMaxLength(100)
                 //    .IsUnicode(false);
-                entity.Property(e => e.FirstName)
+                entity.Property(e => e.UserFirstName)
                     .HasMaxLength(50)
                     .IsUnicode(false);
-                entity.Property(e => e.LastName)
+                entity.Property(e => e.UserLastName)
                     .HasMaxLength(50)
                     .IsUnicode(false);
                 //entity.Property(e => e.Role)

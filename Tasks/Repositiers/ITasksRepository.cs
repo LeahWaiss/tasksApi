@@ -14,17 +14,17 @@ namespace Tasks.Repositiers
     //    }
     public interface ITaskRepository
     {
-        List<TasksModel> GetAllTasks(int Id);
+        public List<TasksModel> GetAllTasks(int Id);
 
         // List<TasksWithUsers> GetAllTasksWithUsers();
-      
-        bool CreateTask(TasksModel task);
 
-        void UpdateTask(TasksModel task);
+        public void CreateTask(TasksModel task);
 
-        void DeleteTask(TasksModel task);
-        List<TasksModel> GetAllTasksWithUser(int UserId);
-         IEnumerable<TasksModel> GetAllTasksByUser(int id);
-        List<TasksModel> GetAllTasksWithProject(int projectId);
+        public void UpdateTask(TasksModel task);
+
+        public void DeleteTask(TasksModel task);
+        public List<TasksModel> GetAllTasksWithUser(int UserId);
+        public IEnumerable<TasksModel> GetAllTasksByUser();
+        public List<TasksModel> GetAllTasksWithProject(int projectId);
     }
 }

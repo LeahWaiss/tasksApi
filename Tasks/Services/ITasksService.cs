@@ -18,7 +18,7 @@ namespace Tasks.Services
         public List<TasksModel> GetAllTasksWithProject(int projectId);
         public List<TasksModel> GetAllTasks(int Id);
 
-        public bool CreateTask(TasksModel task);
+        public void CreateTask(TasksModel task);
 
         public void UpdateTask(TasksModel task);
 

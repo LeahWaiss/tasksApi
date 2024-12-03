@@ -136,3 +136,4 @@ M:\WebApi\Lesson3\Tasks\Tasks\obj\Debug\net8.0\refint\Tasks.dll
 M:\WebApi\Lesson3\Tasks\Tasks\obj\Debug\net8.0\Tasks.pdb
 M:\WebApi\Lesson3\Tasks\Tasks\obj\Debug\net8.0\Tasks.genruntimeconfig.cache
 M:\WebApi\Lesson3\Tasks\Tasks\obj\Debug\net8.0\ref\Tasks.dll
+M:\WebApi\Lesson3\Tasks\Tasks\obj\Debug\net8.0\Tasks.sourcelink.json
